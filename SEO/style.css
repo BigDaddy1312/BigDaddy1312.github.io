@@ -11,24 +11,44 @@ main{
     grid-area: m;
     background-color: brown;
 }
+
 aside{
     grid-area: a;
-    background-color: aqua;
+    background-color: rgb(9, 9, 9);
+    font-size: 80px;
+    color: aliceblue;
 }
 footer{
     grid-area: f;
     background-color: chartreuse;
 }
+nav{
+
+    grid-area: n;
+    background-color: rgb(250, 252, 249);
+    font-size: 60px;
+    
+}
+
+
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+  
 
 #container{
     display: grid;
     height: 100%;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 90% 20%;
 
     grid-template-areas: 
     
     "h h"
+    "n n"
     "m a"
     "f f";
 }
@@ -48,11 +68,4 @@ footer{
 
 }
     
-    .responsive{
-            width: 100%;
-            height: auto;
-        }
-        main{
-            width: 70%;
-            
-        }
+   
