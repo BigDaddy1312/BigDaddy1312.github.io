@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+}
+
+header{
+    grid-area: h;
+    background-color:white;
+    
+    font-size: 50px;
+    
+
+    
+    
+}
+
+main{
+    grid-area: m;
+    background-color: brown;
+}
+
+aside{
+    grid-area: a;
+    background-color:white
+   
+}
+
+#guide{
+
+    grid-area: n;
+    background-color:white;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    
+    
+}
+#aamator{
+    font-size: 50px;
+    text-align: center;
+}
+#aproffs{
+    font-size: 50px;
+    text-align: center;
+}
+#amedel{
+    font-size: 50px;
+    text-align: center;
+}
+
+#logo{
+position: absolute;
+top: 0;
+right: 0;
+
+}
+
+.black{
+
+    color: black;
+}
+
+.gold{
+    color: goldenrod;
+}
+
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+  
+
+#container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 28% 60% 20%;
+
+    grid-template-areas: 
+    
+    "h h"
+    "m n"
+    "m a"
+    ;
+}
+
+@media screen and (max-width:800px){
+
+    #container{
+     
+     grid-template-rows: 30% 100% 25% 100%;
+        grid-template-areas: 
+    
+    "h h"
+    "m m"
+    "n n"
+    "a a"
+    ;   
+    }
+
+    header{
+    
+    font-size: 20px;
+    
+
+    
+    
+}
+
+
+
+}
+    
+   

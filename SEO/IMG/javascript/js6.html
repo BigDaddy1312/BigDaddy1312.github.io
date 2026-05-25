@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form id="ff">
+        <label for="namnruta"> ange ditt namn </label>
+         <label for="epostruta"> ange din epost </label>
+         <label for="ålderruta"> ange din ålder </label>
+        <input id="namnruta" type="text" value="namn">
+        <input id="epostruta" type="text" value="epost">
+        <input id="ålderruta" type="text" value="ålder">
+        <button type="submit">sendform</button>
+
+
+
+    </form>
+
+
+    <div id="textruta">
+
+    </div>
+
+    <div id="epostruta">
+
+     </div>
+
+     <div id="ålderruta">
+
+     </div>
+    <script>
+        let form =document.getElementById("ff");
+        form.addEventListener("submit",function(e){
+           
+           e.preventDefault();
+            let namn =document.getElementById("namnruta").value;
+             let epost =document.getElementById("epostruta").value;
+              let ålder =document.getElementById("ålderruta").value;
+
+            document.getElementById("textruta").innerHTML=namn;
+             document.getElementById("epostruta").innerHTML=epost;
+              document.getElementById("ålderruta").innerHTML=ålder;
+
+        });
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

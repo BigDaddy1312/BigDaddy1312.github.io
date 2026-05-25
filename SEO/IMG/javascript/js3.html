@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+ <button id="greenbutton"> grön </button>
+    <button id="redbutton"> röd </button>
+    <h1 id="h1text"></h1>
+    
+    <script>
+
+    // så man kan klicka på knappen
+
+    let b1=document.getElementById("redbutton");
+     let b2=document.getElementById("greenbutton");
+    let t1=document.getElementById("h1text");
+    let t2=document.getElementById("h1text");
+    b1.addEventListener("click",function(){
+ 
+
+
+
+        //console.log("du har klickat på knappen");
+       
+         t1.innerHTML="stopp";
+         
+    });
+    
+b2.addEventListener("click",function(){
+
+    t2.innerHTML="gå";
+});
+
+     
+   
+   </script>
+</body>
+</html>
